@@ -62,8 +62,8 @@ SELECT
 CASE   
     WHEN unit_price < 2000 THEN "Bajo"   
     ELSE "Alto"   
-    END AS ClasificacionPedidos   
-FROM products;  
+    END AS Cantidad_Monetaria   
+FROM order_details;  
 
 
 
