@@ -7,7 +7,7 @@ AS (
 	SELECT customer_id, company_name
 	FROM customers)
 SELECT c.customer_id, c.company_name
-FROM customers AS c;
+FROM nombre_company AS c;
 
 #2 Selecciona solo los de que vengan de "Germany"
 
@@ -16,7 +16,7 @@ AS (
 	SELECT customer_id, company_name, country
 	FROM customers)
 SELECT c.customer_id, c.company_name, c.country
-FROM customers AS c
+FROM nombre_company AS c
 WHERE c.country ="Germany";
 
 #3 Extraed el id de las facturas y su fecha de cada cliente.
@@ -26,7 +26,7 @@ AS (
 	SELECT customers.company_name, customers.customer_id, orders.order_id, orders.order_date
 	FROM customers)
 SELECT c.company_name, c.customer_id, o.order_id, o.order_date
-FROM customers AS c
+FROM facturas_company AS c
 LEFT JOIN orders AS o
 ON c.customer_id= o.customer_id;
 
@@ -37,7 +37,7 @@ AS (
 	SELECT order_details.quantity, customers.company_name
 	FROM customers)
 SELECT count(order_details.quantity), customers.company_name
-FROM customers
+FROM facturas_company
 INNER JOIN orders
 ON customers.customer_id= orders.customer_id
 INNER JOIN order_details
