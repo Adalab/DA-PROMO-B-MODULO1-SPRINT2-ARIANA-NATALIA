@@ -1,1 +1,1 @@
-Aquí encontrarás varios ejercicios en MySQL y combinación de Python con MySQL trabajados en Pair Programming
+Aquí realizamos en Pair Programming varios ejercicios de CTES y Queries en MySQL y Python
