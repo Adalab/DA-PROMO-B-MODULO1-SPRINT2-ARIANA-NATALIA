@@ -1,1 +1,1 @@
-# DA-PROMO-B-MODULO1-SPRINT2-ARIANA-NATALIA
+Aquí encontrarás una serie de ejercicios realizados en MySQL donde se ha trabajado en Pair Programming
